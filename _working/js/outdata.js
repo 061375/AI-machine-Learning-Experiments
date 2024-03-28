@@ -17,6 +17,7 @@ var OUTDATA = {
         this.outdata.game.columns = columns;
     },
     gameOver:function(){
+        if(gamemode != 'train')return
         Ajax.record(OUTDATA.outdata,AJAXPATH + CURRENTTESTTYPE + VERSION + 'record&dbname='+DBNAME);
     },
     newSnake:function(
@@ -26,6 +27,7 @@ var OUTDATA = {
         direction_of_fruit,
         eating_fruit = false,
         dying = false){ 
+        if(gamemode != 'train')return
         let s = new OUTDATAsnake();
             s.tail = tail;
             s.x = x;
@@ -39,6 +41,7 @@ var OUTDATA = {
         this.outdata.snakes.push(s);
     },
     newFruit:function(x,y,gamespeed){
+        if(gamemode != 'train')return
         let a = new OUTDATAfruit();
             a.x = x;
             a.y = y;

@@ -5,4 +5,4 @@ const VERSION = "V1";
 const DBNAME = "snake.db";
 const GAMESPEED = 250;
 const SNAKESPEEDFACTOR = 20;
-const SNAKESPEEDMAX = 100; 
+const SNAKESPEEDMAX = 100;

@@ -2,16 +2,31 @@
 <html>
 <head>
     <title>Snake Game</title>
-    <style>
-        body { display: flex; justify-content: center; 
-            background-color: #fff;}
-        #container {background-color: #000;}
-        #gameCanvas { border: 1px solid black; }
-    </style>
+    <link rel="stylesheet" href="/css?file=style.css">
 </head>
 <body>
-    <div id="container">
-        <canvas id="gameCanvas" width="400" height="400"></canvas>
+    <div class="flex">
+        
+        <div class="c1" id="container">
+            <canvas id="gameCanvas" width="400" height="400"></canvas>
+        </div>
+        <div class="c1" id="settings">
+            <p>
+                <label for="mode">
+                    Mode: <br>
+                    <select id="gamemode">
+                        <option value="train">Train</option>
+                        <option value="play">Play</option>
+                    </select>
+                </label>
+            </p>
+            <p>
+                <label for="gamespeed">
+                    Game Speed: <br>
+                    <input type="range" id="gamespeed" min="1" max="250">
+                </label>
+            </p>
+        </div>
     </div>
 	<script src="/js?file=script.js"></script>
 </body>

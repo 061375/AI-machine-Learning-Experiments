@@ -62,3 +62,9 @@
   -ms-user-select: none;
   user-select: none;
 }
+// @mixin flex($max, $id:'c')
+// {
+//   @for $i from 1 through $max {
+//     .#{id} { flex: $i; }
+//   }
+// }
